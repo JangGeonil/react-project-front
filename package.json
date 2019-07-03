@@ -1,0 +1,31 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev":"next",
+    "build":"next build",
+    "start":"next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeonilJang/react-project-front.git"
+  },
+  "author": "GEONIL JANG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GeonilJang/react-project-front/issues"
+  },
+  "homepage": "https://github.com/GeonilJang/react-project-front#readme",
+  "dependencies": {
+    "antd": "^3.20.0",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1",
+    "webpack": "^4.35.2"
+  }
+}
