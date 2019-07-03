@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import PostCard from "../components/PostCard";
 import PostForm from "../components/PostForm";
-import {dummy} from "../dummy"
+import {dummy} from "../forDev/dummy"
 
 
 

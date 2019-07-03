@@ -1,11 +1,11 @@
 import React from "react";
 import { Form, Input, Button } from "antd";
-import {dummy} from "../dummy";
+import {dummy} from "../forDev/dummy";
 
 const PostForm = () => {
   return (
     <Form>
-      <Input.TextArea maxLength={140} placeholder="내용을 입력하세요."/>
+      <Input.TextArea maxLength={140} placeholder="Wirte Your Words"/>
       <div>
         <input type="file" multiple hidden/>
         <Button type="danger">Upload Images</Button>

@@ -12,13 +12,13 @@ const ReactProject = ({ Component }) => {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/antd/3.16.2/antd.js" />
       </Head>
       <AppLayout>
-        <Component />
+        <Component style={{marginBottom:"30vh"}}/>
       </AppLayout>
     </>
   )
 }
 
-ReactProject.PropTypes = {
+ReactProject.propTypes = {
   Component: PropTypes.elementType,
 }
 
