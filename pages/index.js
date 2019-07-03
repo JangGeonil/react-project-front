@@ -1,19 +1,18 @@
 import React from "react";
 import Head from "next/head";
-import Layout from "../components/Layout";
+import PostCard from "../components/PostCard";
+import PostForm from "../components/PostForm";
+import {dummy} from "../dummy"
+
+
 
 const Home = () => {
   return (
-    <>
-      <Head>
-        <title>react-project</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/3.16.2/antd.css"/>
-      </Head>
-      <Layout>
-        Hello world!
-      </Layout>
-    </>
-  )
-}
+    <div>
+      {dummy.isLoggedIn && <PostForm/>}
+      {dummy.mainPosts.map( data => <PostCard key={data} postCardData={data} />)}
+    </div>
+  );
+};
 
-export default Home
+export default Home;

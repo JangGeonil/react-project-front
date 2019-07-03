@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Menu, Input, Button } from "antd";
 
-const Layout = ({ children }) => {
+const AppLayout = ({ children }) => {
   return (
     <div>
       <Menu mode="horizontal">
@@ -17,4 +17,4 @@ const Layout = ({ children }) => {
   )
 }
 
-export default Layout
+export default AppLayout;
