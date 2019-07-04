@@ -21,7 +21,7 @@ const ReactProject = ({ Component, store }) => {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/antd/3.16.2/antd.js" />
       </Head>
       <AppLayout>
-        <Component style={{marginBottom:"30vh"}}/>
+        <Component style={{}}/>
       </AppLayout>
     </Provider >
   )

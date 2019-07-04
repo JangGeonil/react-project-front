@@ -7,11 +7,13 @@ import {useSelector} from 'react-redux';
 
 
 const Home = () => {
-//  const {isLoggedIn} = userSelector(state => state.user);
+ const {isLoggedIn} = useSelector(state => state.user);
+ const {mainPosts} = useSelector(state => state.post);
+ 
   return (
     <div>
-      {dummy.isLoggedIn && <PostForm/>}
-      {dummy.mainPosts.map( data => <PostCard key={data} postCardData={data} />)}
+      {isLoggedIn && <PostForm/>}
+      {mainPosts.map( data => <PostCard key={data} postCardData={data} />)}
     </div>
   );
 };

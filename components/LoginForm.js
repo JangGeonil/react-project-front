@@ -12,16 +12,16 @@ const LoginForm = () => {
   },[id, password]);
 
   return (
-    <Form onSubmit={onSubmit} style={{padding:'10px'}}>
+    <Form onSubmit={onSubmit} style={{padding:'20px'}}>
       <div>
         <label htmlFor="user-id">ID</label>
         <br/>
-        <Input name="user-id" value={id} onChange={onChangeId} required />
+        <Input name="user-id" value={id} onChange={onChangeId} />
       </div>
       <div>
         <label htmlFor="user-password">PASSWORD</label>
         <br/>
-        <Input name="user-password" value={password} onChange={onChangePassword} required />
+        <Input name="user-password" value={password} onChange={onChangePassword}  />
       </div>
       <div>
         <Button type="primary" htmlType="submit">LogIn</Button>
